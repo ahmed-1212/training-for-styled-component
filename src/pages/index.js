@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import './App.css';
-import {Image, Container, Button, Footer} from './component/Component'
+import {Image, Container, Button, Footer} from '../component/Component'
+import Link from 'next/link';
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
           <Image alt={theme} src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
           <Footer theme={theme}>
             <Button theme={theme} onClick={changeThemeHandler}> {theme}</Button>
+            <Link href="/auth" style={{marginLeft: '10px'}}><a>Auth</a></Link>
           </Footer>
         </Container>
     

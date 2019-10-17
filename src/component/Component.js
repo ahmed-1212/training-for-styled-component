@@ -20,15 +20,19 @@ export const Button = styled.button`
   outline: none;
 
   color: ${props => props.theme === 'light' ? '#fff' : '#fefefe'};
-  background-color: ${props => props.theme === 'light' ? '#ff4081' : '#6c6565'}
+  background-color: ${props => props.theme === 'light' ? '#ff4081' : '#6c6565'};
+  @media(max-width: 500px) {
+      font-size: 50px;
+  }
 `
 
 export const Footer = styled.div`
     padding: 10px;
     border: 1px solid #ccc;
     border-top: none;
-    width: 479px;
+    width: 478px;
     transition: all .5s ease-out;
+    margin-top: -5px;
     background-color: ${props => props.theme === 'light' ? '#f9f9f9' : '#444'}
 `
 
